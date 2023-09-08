@@ -4,6 +4,7 @@ import { Home, NotFound } from "./pages"
 const Routes = () => {
   return (
     <ReactRouterRoutes>
+      <Route path="/website" element={<Home />} />
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="*" element={<NotFound />} />
