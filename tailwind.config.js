@@ -13,28 +13,31 @@ export default {
         pink: "#E70FAA",
       },
       animation: {
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
       },
       keyframes: {
         typing: {
           "0%": {
             width: "0%",
-            visibility: "hidden"
+            visibility: "hidden",
           },
           "100%": {
-            width: "100%"
-          }  
+            width: "100%",
+          },
         },
         blink: {
           "50%": {
-            borderColor: "transparent"
+            borderColor: "transparent",
           },
           "100%": {
-            borderColor: "white"
-          }  
-        }
+            borderColor: "white",
+          },
+        },
       },
-    }
+      screens: {
+        xs: "300px",
+      },
+    },
   },
   plugins: [],
 }

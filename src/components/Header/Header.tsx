@@ -3,12 +3,12 @@ import { GithubIcon, LinkedinIcon, LogoIcon } from "../../assets/icons"
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between">
+    <header className="xs:hidden sm:flex items-center justify-between">
       <Link to="/">
         <LogoIcon />
       </Link>
 
-      <nav className="flex gap-8 text-xl text-primary">
+      <nav className="flex xs:gap-1 sm:gap-2 md:gap-8 text-xl text-primary">
         <Link to="/" className="hover:text-gradient">
           Home
         </Link>
@@ -26,7 +26,7 @@ const Header = () => {
         </Link>
       </nav>
 
-      <div className="flex gap-4">
+      <div className="flex xs:gap-2 md:gap-4">
         <Link to="https://github.com/jeangeorge" target="_blank">
           <GithubIcon />
         </Link>
