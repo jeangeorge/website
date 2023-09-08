@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
-import { GithubIcon, LinkedinIcon, LogoIcon } from "../../assets/icons"
-import { useState } from "react"
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import { GITHUB_URL, LINKEDIN_URL } from '@constants'
+import { Github, Linkedin, SiteLogo } from '@assets/icons'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -44,18 +46,14 @@ const Header = () => {
               stroke="currentColor"
               aria-hidden="true"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start w-full">
           <div className="flex flex-shrink-0 items-center">
             <Link to="/">
-              <LogoIcon />
+              <SiteLogo />
             </Link>
           </div>
           <div className="hidden sm:ml-6 sm:block w-full">
@@ -79,11 +77,11 @@ const Header = () => {
           </div>
         </div>
         <div className="absolute inset-y-0 right-0 flex gap-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <Link to="https://github.com/jeangeorge" target="_blank">
-            <GithubIcon />
+          <Link to={GITHUB_URL} target="_blank">
+            <Github />
           </Link>
-          <Link to="https://www.linkedin.com/in/jean-george/" target="_blank">
-            <LinkedinIcon />
+          <Link to={LINKEDIN_URL} target="_blank">
+            <Linkedin />
           </Link>
         </div>
       </div>

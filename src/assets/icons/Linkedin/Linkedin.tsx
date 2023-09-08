@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useMemo, useState } from 'react'
 
 const PathDefault = () => (
   <path
@@ -28,7 +28,7 @@ const PathHovering = () => (
   </>
 )
 
-const LinkedinIcon = () => {
+const Linkedin = () => {
   const [hovering, setHovering] = useState(false)
 
   const path = useMemo(() => {
@@ -54,4 +54,4 @@ const LinkedinIcon = () => {
   )
 }
 
-export default LinkedinIcon
+export default Linkedin

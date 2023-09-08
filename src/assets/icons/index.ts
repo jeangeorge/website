@@ -1,3 +1,3 @@
-export { default as GithubIcon } from "./GithubIcon"
-export { default as LinkedinIcon } from "./LinkedinIcon"
-export { default as LogoIcon } from "./LogoIcon"
+export { default as Github } from './Github'
+export { default as Linkedin } from './Linkedin'
+export { default as SiteLogo } from './SiteLogo'
