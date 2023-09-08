@@ -43,7 +43,7 @@ const Avatar = () => {
   const [position, setPosition] = useState(randomNumber(MIN, MAX))
 
   const [message, setMessage] = useState("")
-  const [avatars, setAvatars] = useState<string[]>([])
+  const avatars = generateAvatars(MAX)
 
   const shufflePosition = () => {
     const newPosition = randomNumber(MIN, MAX)
@@ -54,12 +54,9 @@ const Avatar = () => {
   }
 
   const onClick = () => {
+    shufflePosition()
     setMessage(messages[randomNumber(MIN, MAX)])
   }
-
-  useEffect(() => {
-    setAvatars(generateAvatars(MAX))
-  }, [])
 
   useEffect(() => {
     if (message !== "") {
