@@ -10,7 +10,7 @@ const generateAvatars = (max: number) => {
   const avatars = []
 
   for (let i = 0; i <= max; i++) {
-    avatars.push(`/public/images/avatar${i + 1}.png`)
+    avatars.push(`/website/images/avatar${i + 1}.png`)
   }
 
   return avatars
