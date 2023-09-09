@@ -1,6 +1,8 @@
-<img src="https://raw.githubusercontent.com/jeangeorge/website/main/public/images/avatar4.png" alt="Jean" />
+<img src="https://raw.githubusercontent.com/jeangeorge/website/main/public/images/avatar4.png" alt="Jean" width="100px" align="left" />
 
 Yo, I'm glad you're here! This repository contains my personal website, which I'm using as a portfolio and to centralize information about me.
+
+</br>
 
 ## 👨‍💻 Local development
 
